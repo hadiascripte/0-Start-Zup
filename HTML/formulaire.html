@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Formulaire</title>
+    </head>
+    <body>
+        <form action="" method="get">
+            <p>
+                <label for="name">Nom :</label>
+                <input type="text" name="name" id="name" required/>
+            </p>
+            <p>
+                <label for="lastName">Prénom :</label>
+                <input type="text" name="lastName" id="lastName" />
+            </p>
+            <p>
+                  <label for="age">Votre âge :</label>
+                  <input type="number" name="age" id="age" min="18" max="40" />
+            </p>
+            <p>
+                  <label for="tel">Votre numéro de téléphone : </label>
+                  <input type="tel" name="tel" id="tel" />
+            </p>
+            <p>
+                <label for="brtDate">Votre date de naissance :</label>
+                <input type="date" name="brtDate" id="brtDate" min="1987" max="2005" />
+            </p>
+            <p>
+                  <label>Genre:</label>
+                  <input type="radio" name="genre" value="homme" />Homme
+                <input type="radio" name="genre" value="femme" />Femme
+            </p>
+            <p>
+                <label for="pays">Pays</label>
+                <select name="pays" id="pays">
+                    <option value="">Choisir un pays</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Equateur">Equateur</option>
+                    <option value="Algérie">Algérie</option>
+                    <option value="France" selected>France</option>
+                </select>
+            </p>
+            <p>
+                <input type="checkbox" name="cgu" id="cgu"/>J'ai pris connaissance des
+                conditions générales d'utilisation
+            </p>
+            <button type="submit">Envoyer</button>
+            <!-- <input type="submit" value="Envoyer" /> -->
+        </form>
+    </body>
+</html>
