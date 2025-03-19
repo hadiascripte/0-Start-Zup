@@ -1,0 +1,29 @@
+body {
+    font-family: "Playwrite HU", cursive;
+    font-size: 18px;
+    font-weight: 400px;
+}
+
+a {
+    color: orange;
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(255, 0, 72);
+    background-color: rgb(235, 216, 129);
+}
+nav a {
+    margin: 0 0 0 30px;
+    padding: 15px 30px;
+    border-radius: 100px;
+}
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.black {
+    color: rgb(207, 17, 17);
+}
+#titre {
+    color: rgb(10, 98, 199);
+}
