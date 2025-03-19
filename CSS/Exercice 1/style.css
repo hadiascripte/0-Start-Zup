@@ -1,0 +1,27 @@
+body {
+    background-color: whitesmoke;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.card {
+    text-align: center;
+    border: solid 1px white;
+    border-radius: 20px;
+    background-color: white;
+    width: 300px;
+    height: 410px;
+    margin: 0 auto;
+}
+.card img {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+a {
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 15px;
+    background-color: rgb(68, 208, 219);
+    color: whitesmoke;
+}
