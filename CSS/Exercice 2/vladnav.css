@@ -1,0 +1,14 @@
+body{
+      display: flex;
+      flex-direction: column;
+}.nav{
+      display: flex;
+      justify-content: space-between;
+}
+.links{
+      align-content: center ;
+}
+.login{
+      display: flex;
+      flex-direction: column;
+}
