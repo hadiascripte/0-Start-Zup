@@ -1,7 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-color: whitesmoke;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 .card {
     text-align: center;
@@ -9,8 +12,9 @@ body {
     border-radius: 20px;
     background-color: white;
     width: 300px;
-    height: 410px;
+    height: 400px;
     margin: 0 auto;
+    margin-top: 20px;
 }
 .card img {
     margin: 20px;
@@ -18,10 +22,14 @@ body {
     height: 200px;
     border-radius: 100px;
 }
+p {
+    margin: 20px;
+}
 a {
     border-radius: 10px;
     text-decoration: none;
-    padding: 15px;
+    margin: 10px;
+    padding: 10px;
     background-color: rgb(68, 208, 219);
     color: whitesmoke;
 }
