@@ -65,46 +65,53 @@
 // // On peut écouter un événement sur un élément en utilisant la méthode addEventListener
 //Ajouter un evenement au clic sur un bouton
 
+let monTitre = document.querySelector("h1");
+let lettreTitre = monTitre.textContent;
+let tableau = lettreTitre.split("");
+console.log(monTitre);
+console.log(lettreTitre);
 
+monTitre.addEventListener("mouseover", function () {
+    monTitre.style.color = color[Math.floor(Math.random() * color.length)];
+});
 
-let monTitre= document.querySelector("h1");
-
-
-
+monTitre.addEventListener("mouseout", function () {
+    monTitre.style.color = color[Math.floor(Math.random() * color.length)];
+});
 
 let compteur = 0; // On initialise un compteur à 0
 let btn = document.querySelector("#btn"); // On sélectionne le bouton
 let affichage = document.querySelector("#compteur"); // On sélectionne l'élément qui va afficher le compteur
-let btn2 = document.querySelector("#btn2")
-btn2.setAttribute("hidden","hidden");
+let btn2 = document.querySelector("#btn2");
+btn2.setAttribute("hidden", "hidden");
 // On ajoute un écouteur d'événement au clic sur le bouton
 
 btn.addEventListener("click", function () {
     compteur++;
-     
+
     affichage.innerHTML = "Nombre de clics : " + compteur;
-    if (compteur == 5) {
+    if (compteur > 5) {
         compteur = 0;
         affichage.innerHTML =
             "Vous avez atteint le nombre maximum de clics ! CALM DOWN ...";
+        affichage.style.color = "red";
         btn.setAttribute("hidden", "hidden");
-            btn2.removeAttribute("hidden");
+        btn2.removeAttribute("hidden");
     }
-})
-btn2.addEventListener("click", function () {
-      btn.removeAttribute("hidden");
-      btn2.setAttribute("hidden","hidden")
-    
 });
-
+btn2.addEventListener("click", function () {
+    btn.removeAttribute("hidden");
+    btn2.setAttribute("hidden", "hidden");
+    affichage.innerHTML = "Nombre de clics : " + compteur;
+    affichage.style.color = "#41ca1f";
+});
 
 //changer la couleur de fond d'un élément au clic
 
-let monBtn = document.querySelector("#body");
-body = document.querySelector("body");
+let monBtn = document.querySelector("#colorBody");
+btnColor = document.querySelector(".btnColor");
 let color = ["red", "green", "yellow", "pink", "purple"];
 
 colorBody.addEventListener("click", function () {
-    body.style.backgroundColor = color[Math.floor(Math.random() * color.length)];
+    btnColor.style.backgroundColor = color[Math.floor(Math.random() * color.length)];
 });
-

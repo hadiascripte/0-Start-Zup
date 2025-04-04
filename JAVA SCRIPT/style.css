@@ -1,21 +1,84 @@
-.monBtn{
-      margin: 100px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-button{
-      background-color: #4CAF50; 
-      border: none; /* Remove borders */
-      color: white;
-      padding: 15px 32px; 
-      text-align: center; 
-      text-decoration: none; /* No underline */
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer; 
-      border-radius: 12px; 
+@font-face {
+    font-family: 'Caveat';
+    font-style: normal; 
+    src: url('Caveat-Bold.ttf') format('truetype');
+
+}
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ background-color: whitesmoke;
 }
 h1{
-      text-align: center;
-      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #1f6fca;
-      font-size: 50px;
+    font-family: 'Caveat', cursive;
+    color: #1f6fca;
+    font-size: 3rem;
+    margin: 20px 0;
+    text-align: center;
+    user-select: none;
+}
+h1:hover {
+    color: #41ca1f;
+    transition: 0.5s;
+}
+p {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #41ca1f;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 20px 0;
+    width: 60vw;
+    text-align: center;
+    user-select: none;
+}
+.title {
+    text-align: center;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #1f6fca;
+    font-size: 2rem;
+    margin: 20px 0;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+button {
+    font-size: 1.1rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #af4caa;
+    border: none; /* Remove borders */
+    color: white;
+    padding: 20px 20px;
+    /* text-align: center; */
+    text-decoration: none; /* No underline */
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 200px;
+}
+.btnColor {
+    margin-top: 50px;
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+}
+.btnColor button {
+      
+    background-color: #ffffff;
+    color: black;
+}
+.cliquezmoi {
+    text-align: center;
 }
