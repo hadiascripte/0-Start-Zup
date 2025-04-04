@@ -1,0 +1,21 @@
+.monBtn{
+      margin: 100px;
+}
+button{
+      background-color: #4CAF50; 
+      border: none; /* Remove borders */
+      color: white;
+      padding: 15px 32px; 
+      text-align: center; 
+      text-decoration: none; /* No underline */
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer; 
+      border-radius: 12px; 
+}
+h1{
+      text-align: center;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #1f6fca;
+      font-size: 50px;
+}
