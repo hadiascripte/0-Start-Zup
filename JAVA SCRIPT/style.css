@@ -4,10 +4,9 @@
     box-sizing: border-box;
 }
 @font-face {
-    font-family: 'Caveat';
-    font-style: normal; 
-    src: url('Caveat-Bold.ttf') format('truetype');
-
+    font-family: "Caveat";
+    font-style: normal;
+    src: url("Caveat-Bold.ttf") format("truetype");
 }
 body {
     width: 100%;
@@ -15,13 +14,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
- background-color: whitesmoke;
+    background-color: whitesmoke;
 }
-h1{
-    font-family: 'Caveat', cursive;
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #1f6fca;
-    font-size: 3rem;
-    margin: 20px 0;
+    font-size: 2.3rem;
+    padding: 20px 0;
     text-align: center;
     user-select: none;
 }
@@ -56,7 +55,8 @@ main {
 }
 button {
     font-size: 1.1rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
     background-color: #af4caa;
     border: none; /* Remove borders */
     color: white;
@@ -66,7 +66,13 @@ button {
     margin: 10px 2px;
     cursor: pointer;
     border-radius: 12px;
-    width: 200px;
+    width: 220px;
+}
+button:hover{
+      background-color: rgb(68, 208, 219, 0.5);
+      color: black;
+      letter-spacing:1px;
+      transition: background-color 0.5s, color 0.5s;
 }
 .btnColor {
     margin-top: 50px;
@@ -75,7 +81,6 @@ button {
     width: 100%;
 }
 .btnColor button {
-      
     background-color: #ffffff;
     color: black;
 }
