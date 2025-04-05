@@ -75,6 +75,7 @@
 
 // Mon titre avec effet lors du survol de la souris
 let color = ["red", "green", "pink", "purple", "blue", "orange", "black"];
+
 let monTitre = document.querySelector("h1");
 let lettreTitre = monTitre.textContent;
 let tableau = lettreTitre.split("");
