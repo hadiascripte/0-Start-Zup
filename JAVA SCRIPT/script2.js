@@ -61,11 +61,6 @@
 // button.addEventListener("click", function() {
 //     alert("Vous avez cliqué sur le bouton !"); // On affiche une alerte lorsque le bouton est cliqué
 // })
-// Page 1
-//----------------------------
-
-
-
 
 
 
@@ -79,6 +74,7 @@
 
 
 // Mon titre avec effet lors du survol de la souris
+let color = ["red", "green", "pink", "purple", "blue", "orange", "black"];
 let monTitre = document.querySelector("h1");
 let lettreTitre = monTitre.textContent;
 let tableau = lettreTitre.split("");
@@ -127,7 +123,7 @@ btn2.addEventListener("click", function () {
 
 let monBtn = document.querySelector("#colorBody");
 btnColor = document.querySelector(".btnColor");
-let color = ["red", "green", "yellow", "pink", "purple", "blue", "orange", "black"];
+
 
 colorBody.addEventListener("click", function () {
     btnColor.style.backgroundColor = color[Math.floor(Math.random() * color.length)];
