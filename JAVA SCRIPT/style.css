@@ -12,7 +12,6 @@ body {
     background-color: whitesmoke;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     height: 100vh;
-    
 }
 main {
     display: flex;
@@ -70,6 +69,8 @@ h2 {
     padding: 5px;
 }
 p {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
     font-size: 1.3rem;
     padding: 5px;
 }
@@ -80,11 +81,15 @@ p {
     position: relative;
 }
 .img0 {
+    display: flex;
+    align-items: center;
+    text-align: center;
     margin: 20px 0;
     width: 200px;
     height: 200px;
     background-color: white;
     box-shadow: 18px 18px 20px 0px rgba(0, 0, 0, 0.3);
+    border: solid 2px rgba(0, 0, 0, 0.476);
     border-radius: 100%;
 }
 .img1,
@@ -120,7 +125,7 @@ p {
     background-image: url("/Ressources/reseaux_sociaux_identite_visuelle.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 350px;
+    background-size: 250px;
 }
 .img1:hover,
 .img2:hover,
@@ -133,7 +138,7 @@ p {
         justify-content: center;
         align-items: center;
     }
-    .left{
+    .left {
         margin: 50px auto;
     }
     .lienBulle {
