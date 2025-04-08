@@ -6,6 +6,7 @@ const input = document.getElementById("inputAge");
 const form = document.querySelector("#monForm");
 const resultat = document.querySelector("#resultatAge");
 const userValue = input.value;
+
 let anneeMax = 2025;
 let anneeMin = 1925;
 
@@ -16,24 +17,11 @@ input.addEventListener("input", () => {
 console.log(form);
 console.log(input);
 // Je récupère la valeur de l'utilisateur que je mets dans une variable
-form.addEventListener("submit", (e) => {
-  
-    console.log(userValue);
-    
-
-    if (userValue > anneeMax || userValue < anneeMin) {
-        e.preventDefault();
-        resultat.textContent = `Veuillez choisir une année de naissance comprise entre ${anneeMin} et ${anneeMax}`;
-        resultat.style.color="red"
-    } else {
-        resultat.textContent = "";
-    }
-});
 
 const calcAge = function (userAgeValue) {
     const userAge = 2025 - userAgeValue;
     const resultat = document.querySelector("#resultatAge");
-//     resultat.style.display = "none";
+    resultat.style.display = "none";
 
     if (userAge < 18) {
         resultat.classList.add("styleReponseMineur");
@@ -43,8 +31,19 @@ const calcAge = function (userAgeValue) {
         resultat.classList.add("styleReponseMajeur");
         resultat.style.display = "block";
         return (resultat.innerHTML = `Vous avez ${userAge} ans, vous êtes donc majeur.`);
-    } else {
+    }  else {
         resultat.style.display = "none";
     }
 };
-console.log(calcAge());
+console.log(calcAge(1900));
+
+form.addEventListener("submit", (e) => {
+    const userValue = input.value;
+    console.log(userValue);
+
+    if (userValue > anneeMax || userValue < anneeMin) {
+        e.preventDefault();
+        resultat.classList.add("styleReponseAnneeIncorrecte");
+        resultat.innerHTML = `Veuillez choisir une année de naissance comprise entre ${anneeMin} et ${anneeMax}.`;
+    }
+});
