@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Les variables et conditions</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Les variables et les conditions</h1>
+        </header>
+
+        <main>
+            <div class="exo1">
+                <div class="txt">
+                    <h2 class="h2title">Calcul de votre âge</h2>
+                    <p class="consignes">
+                        Demandez à l'utilisateur son année de naissance, puis
+                        calculez et affichez son âge. Ajoutez une condition pour
+                        afficher 'Mineur' si l'âge est inférieur à 18 ans
+                    </p>
+                </div>
+                <div class="donnees">
+                  <form id="monForm" action="">
+                    <label for="inputAge">Entrez votre année de naissance :</label>
+                    <input type="text" name="userValue" id="inputAge" required/>
+                    <input type="submit" name="envoie" id="envoie">
+                    <p id="resultatAge"></p>
+                  </form>
+                </div>
+            </div>
+            <div class="exo2">
+                <div class="txt">
+                    <h2 class="h2title">Convertisseur de température</h2>
+                    <p class="consignes">
+                        Demandez une température en Celsius, convertissez-la en
+                        Fahrenheit et affichez un message : 'froid', 'agréable' ou
+                        'chaud' selon la température.
+                    </p>
+                </div>
+                <div class="donnees">
+                  <form action="">
+                    <label for="degre">Entrez la tempérture en °C </label>
+                    <input type="text" name="degre" id="degre" required />
+                    <input type="submit" name="enoietemperature" id="envoietemperature">
+                  </form>
+                </div>
+            </div>
+        </main>
+
+        <script src="script.js"></script>
+    </body>
+</html>
