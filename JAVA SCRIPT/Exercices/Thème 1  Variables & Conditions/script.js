@@ -18,7 +18,12 @@ console.log(input);
 console.log(btn);
 
 input.addEventListener("input", function (e) {
+
     input.value = input.value.replace(/\D/g, "").slice(0, 4);
+    
+    // if (e.target.value.length === 3){
+    //     resultat.removeClassList;
+    // } 
     if (e.target.value.length === 4) {
         const inputValueLimite = e.target.value.replace(/\D/g, "").slice(0, 4);
         inputInt = parseInt(inputValueLimite);
