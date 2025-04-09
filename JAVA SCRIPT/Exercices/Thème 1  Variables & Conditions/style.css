@@ -77,7 +77,15 @@ form {
       background-color: rgb(255, 0, 0);
       border-radius: 20px;
 }
-.styleReponseAnneeIncorrecte{
+.styleReponseAnneeIncorrecteMin{
+      font-family:sans-serif;
+      padding: 15px;
+      width: 250px;
+      text-align: center;
+      color: rgb(255, 0, 0);
+      border-radius: 20px;
+}
+.styleReponseAnneeIncorrecteMax{
       font-family:sans-serif;
       padding: 15px;
       width: 250px;
