@@ -1,14 +1,26 @@
-*{
+* {
       margin: 0;
-      padding:0 ;
+      padding: 0;
       box-sizing: border-box;
-}
-.main1{
+  }
+  body {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      height: 100vh;
+  }
+  h1 {
+      width: 60%;
+      margin: 20px auto;
+  
+      padding: 10px;
+      text-align: center;
+      background-color: aquamarine;
+      border-radius: 20px;
+  }
+  main {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center;
-
+      padding: 50px;
 }
 form{
       display: flex;
