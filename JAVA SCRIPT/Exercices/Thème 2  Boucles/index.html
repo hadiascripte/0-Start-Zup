@@ -8,21 +8,44 @@
     </head>
     <body>
         <header>
-            <h1>Les variables et les conditions</h1>
+            <h1>Les boucles</h1>
         </header>
+        <main>
+            <div class="maintop">
+                <div class="main1left">
+                    <h2>Compteur pair/impair</h2>
+                    <label for="userNumber"
+                        >Vérifier les chiffres pairs de mon nombre :</label
+                    >
+                    <input
+                        type="text"
+                        name="userNumber"
+                        id="userNumber"
+                        placeholder="Entrez votre nombre"
+                    />
+                    <input type="submit" name="submitPair" id="sbtPair" />
+                </div>
 
-        <main class="main1">
-            <h2>Compteur pair/impair</h2>
-            <form action="">
-                <label for="userNumber">Vérifier les chiffres pairs de mon nombre</label>
-                <input type="text" name="userNumber" id="userNumber" />
-                <input type="submit" name="submitNumber" id="sbtNumber" />
-                <p id="resultat"></p>
-            </form>
-        </main>
-
-        <main class="main2">
-            <h2>Table de multiplication</h2>
+                <div class="main1right">
+                    <p id="resultatPair"></p>
+                </div>
+            </div>
+            <div class="mainbottom">
+                <div class="main2left">
+                    <h2>Table de multiplication</h2>
+                    <label for="userNumberTable">Entrez un nombre :</label>
+                    <input
+                        type="text"
+                        id="userNumberTable"
+                        name="userNumberTable"
+                        placeholder="Entrez votre nombre"
+                    />
+                    <input type="submit" id="sbtTable" name="submitTable" />
+                </div>
+                <div class="main2right">
+                    <p id="resultatTable"></p>
+                </div>
+            </div>
         </main>
         <script src="script.js"></script>
     </body>
