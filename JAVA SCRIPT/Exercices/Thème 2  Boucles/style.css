@@ -67,7 +67,3 @@ input {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: 0.2 ease;
 }
-#sbtPair:hover,
-#sbtTable:hover {
-    transform: scale(1.1);
-}

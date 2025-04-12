@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    height: 100vh;
+}
+h1 {
+    width: 60%;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+label {
+    text-align: center;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+}
+input {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.maintop {
+    display: flex;
+
+    align-items: center;
+}
+.mainleft {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    gap: 3vw;
+    background-color: rgb(248, 99, 166);
+    border-radius: 20px;
+    margin: 35px;
+    padding: 20px;
+}
+#reponseName {
+    text-align: center;
+    width: 300px;
+    gap: 3vw;
+    background-color: rgb(248, 99, 166);
+    border-radius: 20px;
+    margin: 35px;
+    padding: 20px;
+    position: relative;
+}
+#reponseName::before {
+    position: absolute;
+    content: "Fonction simple";
+    top: 0;
+    left: 0;
+    transform: translate(-30%, -50%);
+    background-color: rgb(240, 164, 238);
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+#reponseName2 {
+    text-align: center;
+    width: 300px;
+    gap: 3vw;
+    background-color: rgb(248, 99, 166);
+    border-radius: 20px;
+    margin: 35px;
+    padding: 20px;
+    position: relative;
+}
+#reponseName2::before {
+    position: absolute;
+    content: "Fonction fléchée";
+    top: 0;
+    left: 0;
+    transform: translate(-30%, -50%);
+    background-color: rgb(240, 164, 238);
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+#reponseName3 {
+    text-align: center;
+    width: 300px;
+    gap: 3vw;
+    background-color: rgb(248, 99, 166);
+    border-radius: 20px;
+    margin: 35px;
+    padding: 20px;
+    position: relative;
+}
+#reponseName3::before {
+    position: absolute;
+    content: "Fonction Anonyme";
+    top: 0;
+    left: 0;
+    transform: translate(-30%, -50%);
+    background-color: rgb(240, 164, 238);
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.mainBottom{
+      display: flex;
+}
+.mainBottomRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainBottomLeft {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    gap: 3vw;
+    background-color: rgb(248, 99, 166);
+    border-radius: 20px;
+    margin: 35px;
+    padding: 20px;
+}
+.mainBottomLeft input {
+    width: 100px;
+}
+.btn12 {
+    display: flex;
+    justify-content: center;
+}
+.bntcalcul{
+      margin: auto;
+}
+#resultatCalcul {
+    text-align: center;
+    width: 300px;
+    gap: 3vw;
+    background-color: rgb(248, 99, 166);
+    border-radius: 20px;
+    margin: 35px;
+    padding: 20px;
+    position: relative;
+}
