@@ -22,8 +22,11 @@ h2 {
 }
 .styleResultatPair,
 .styleResultatTable {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 300;
     text-align: center;
-    width: 300px;
+    width: 400px;
     gap: 3vw;
     background-color: bisque;
     border-radius: 20px;

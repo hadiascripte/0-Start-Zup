@@ -3,8 +3,6 @@ let array = ["développeuse", "passionnée", "moi !"];
 let wordIndex = 0;
 let letterIndex = 0;
 
-
-
 const createLetter = () => {
     const letter = document.createElement("span");
     target.appendChild(letter);
@@ -17,7 +15,11 @@ const createLetter = () => {
 
 const loop = () => {
     setTimeout(() => {
-        if (letterIndex < array[wordIndex].length) {
+        if (wordIndex >= array.length) {
+            wordIndex = 0;
+            letterIndex = 0;
+            loop();
+        } else if (letterIndex < array[wordIndex].length) {
             createLetter();
             letterIndex++;
             loop();
@@ -27,7 +29,7 @@ const loop = () => {
             setTimeout(() => {
                 loop();
             }, 2800);
-        }
+        } 
     }, 60);
 };
 loop();
